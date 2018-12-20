@@ -1,0 +1,22 @@
+yamcs:
+  build: yamcs
+  ports:
+    - 8090:8090
+
+openmct:
+  build: openmct
+  volumes:
+    - ./index.html:/openmct-tutorial/index.html
+    - ./server.js:/openmct-tutorial/example-server/server.js
+    # - ./yamcs.js:/openmct-tutorial/node_modules/yamcs-openmct-plugin/yamcs.js
+  ports:
+    - 8080:8080
+
+
+
+
+
+
+
+
+
